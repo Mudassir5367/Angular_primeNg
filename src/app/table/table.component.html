@@ -1,0 +1,20 @@
+<p>table1 works!</p>
+<app-form1></app-form1>
+
+<p-table border="1px solid black" [value]="studenDetail">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>UserName</th>
+            <th>Price</th>
+            <th>WWW</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-student>
+        <tr>
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.city}}</td>
+        </tr>
+    </ng-template>
+  </p-table>
+  
